@@ -45,6 +45,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -152,7 +156,15 @@
     <Compile Include="Models\ModelViews\CartView.cs" />
     <Compile Include="Models\ModelViews\CategoryProductView.cs" />
     <Compile Include="Models\ModelViews\DiscountView.cs" />
+    <Compile Include="Models\ModelViews\GemstoneTypeView.cs" />
+    <Compile Include="Models\ModelViews\MaterialView.cs" />
+    <Compile Include="Models\ModelViews\OrderDetailView.cs" />
+    <Compile Include="Models\ModelViews\OrderView.cs" />
+    <Compile Include="Models\ModelViews\PaymentView.cs" />
+    <Compile Include="Models\ModelViews\ProductSize.cs" />
+    <Compile Include="Models\ModelViews\ProductView.cs" />
     <Compile Include="Models\ModelViews\RoleView.cs" />
+    <Compile Include="Models\ModelViews\SizeView.cs" />
     <Compile Include="Models\ModelViews\UserView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -206,7 +218,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\UserAPI\Data\" />
     <Folder Include="Areas\UserAPI\Views\Shared\" />
-    <Folder Include="Models\Entities\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\bootstrap.min.js.map" />
@@ -278,6 +289,9 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.7.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.7.0.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
