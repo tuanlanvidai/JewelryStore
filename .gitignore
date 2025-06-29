@@ -1,0 +1,55 @@
+# Build output
+bin/
+obj/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# NuGet Packages
+*.nupkg
+packages/
+!packages/build/
+
+# Visual Studio files
+.vs/
+.vscode/
+*.GhostDoc.xml
+
+# Test results
+TestResults/
+*.trx
+*.xml
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.cache
+*.tmp
+*.temp
+*~
+
+# Roslyn compiler
+*.ide/
+
+# ASP.NET specific
+App_Data/
+*.mdf
+*.ldf
+*.publishsettings
+*.pubxml
+*.publishproj
+
+# Backup files
+*.bak
+*.backup
+
+# Miscellaneous
+Thumbs.db
+*.ds_store
+
+# Keep these files
+!web.config
+!*.csproj
